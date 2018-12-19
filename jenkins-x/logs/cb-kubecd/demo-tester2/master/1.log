@@ -1,0 +1,210 @@
+Step: build-step-credential-initializer:
+
+Step: build-step-git-source:
+
+Step: build-step-jenkins:
+
+Picked up _JAVA_OPTIONS: -Xmx400m
+Started
+Running in Durability level: PERFORMANCE_OPTIMIZED
+  16.605 [id=24]	WARNING	i.f.k.c.i.VersionUsageUtils#alert: The client is using resource type 'customresourcedefinitions' with unstable version 'v1beta1'
+[Pipeline] node
+  23.663 [id=37]	WARNING	o.j.plugins.workflow.cps.DSL#invokeStep: Error storing the arguments for step: checkout
+org.kohsuke.stapler.NoStaplerConstructorException: There's no @DataBoundConstructor on any constructor of class io.jenkins.jenkinsfile.runner.FileSystemSCM
+	at org.kohsuke.stapler.ClassDescriptor.loadConstructorParamNames(ClassDescriptor.java:265)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.<init>(DescribableModel.java:144)
+	at org.jenkinsci.plugins.structs.describable.DescribableModel.of(DescribableModel.java:114)
+	at org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl.sanitizeObjectAndRecordMutation(ArgumentsActionImpl.java:294)
+	at org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl.sanitizeMapAndRecordMutation(ArgumentsActionImpl.java:386)
+	at org.jenkinsci.plugins.workflow.cps.actions.ArgumentsActionImpl.<init>(ArgumentsActionImpl.java:74)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeStep(DSL.java:245)
+	at org.jenkinsci.plugins.workflow.cps.DSL.invokeMethod(DSL.java:178)
+	at org.jenkinsci.plugins.workflow.cps.CpsScript.invokeMethod(CpsScript.java:122)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaClassSite.call(PogoMetaClassSite.java:48)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
+	at com.cloudbees.groovy.cps.sandbox.DefaultInvoker.methodCall(DefaultInvoker.java:20)
+	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
+	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
+	at sun.reflect.GeneratedMethodAccessor116.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.get(PropertyishBlock.java:76)
+	at com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)
+	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.fixName(PropertyishBlock.java:66)
+	at sun.reflect.GeneratedMethodAccessor121.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
+	at com.cloudbees.groovy.cps.impl.ConstantBlock.eval(ConstantBlock.java:21)
+	at com.cloudbees.groovy.cps.Next.step(Next.java:83)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:174)
+	at com.cloudbees.groovy.cps.Continuable$1.call(Continuable.java:163)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport$ThreadCategoryInfo.use(GroovyCategorySupport.java:129)
+	at org.codehaus.groovy.runtime.GroovyCategorySupport.use(GroovyCategorySupport.java:268)
+	at com.cloudbees.groovy.cps.Continuable.run0(Continuable.java:163)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.access$101(SandboxContinuable.java:34)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.lambda$run0$0(SandboxContinuable.java:59)
+	at org.jenkinsci.plugins.scriptsecurity.sandbox.groovy.GroovySandbox.runInSandbox(GroovySandbox.java:108)
+	at org.jenkinsci.plugins.workflow.cps.SandboxContinuable.run0(SandboxContinuable.java:58)
+	at org.jenkinsci.plugins.workflow.cps.CpsThread.runNextChunk(CpsThread.java:182)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.run(CpsThreadGroup.java:332)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup.access$200(CpsThreadGroup.java:83)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:244)
+	at org.jenkinsci.plugins.workflow.cps.CpsThreadGroup$2.call(CpsThreadGroup.java:232)
+	at org.jenkinsci.plugins.workflow.cps.CpsVmExecutorService$2.call(CpsVmExecutorService.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at hudson.remoting.SingleLaneExecutorService$1.run(SingleLaneExecutorService.java:131)
+	at jenkins.util.ContextResettingExecutorService$1.run(ContextResettingExecutorService.java:28)
+	at jenkins.security.ImpersonatingExecutorService$1.run(ImpersonatingExecutorService.java:59)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Running on Jenkins in /tmp/jenkinsTests.tmp/jenkins3241301139328690919test/workspace/job
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (Declarative: Checkout SCM)
+[Pipeline] checkout
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] withCredentials
+[Pipeline] {
+[Pipeline] withEnv
+[Pipeline] {
+[Pipeline] stage
+[Pipeline] { (CI Build and push snapshot)
+Stage "CI Build and push snapshot" skipped due to when conditional
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Build Release)
+[Pipeline] dir
+Running in /home/jenkins/go/src/github.com/cb-kubecd/demo-tester2
+[Pipeline] {
+[Pipeline] git
+Cloning the remote Git repository
+Cloning repository https://github.com/cb-kubecd/demo-tester2.git
+ > git init /home/jenkins/go/src/github.com/cb-kubecd/demo-tester2 # timeout=10
+Fetching upstream changes from https://github.com/cb-kubecd/demo-tester2.git
+ > git --version # timeout=10
+ > git fetch --tags --progress https://github.com/cb-kubecd/demo-tester2.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url https://github.com/cb-kubecd/demo-tester2.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/cb-kubecd/demo-tester2.git # timeout=10
+Fetching upstream changes from https://github.com/cb-kubecd/demo-tester2.git
+ > git fetch --tags --progress https://github.com/cb-kubecd/demo-tester2.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision c0ffc7beb70cef5a6c5c4164e9c09f4131337922 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f c0ffc7beb70cef5a6c5c4164e9c09f4131337922
+ > git branch -a -v --no-abbrev # timeout=10
+ > git checkout -b master c0ffc7beb70cef5a6c5c4164e9c09f4131337922
+Commit message: "Draft create"
+First time build. Skipping changelog.
+[Pipeline] sh
++ jx-release-version
++ echo 0.0.1
+[Pipeline] sh
++ cat VERSION
++ jx step tag --version 0.0.1
+plugins.jenkins.io is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot list plugins.jenkins.io in the namespace "jx"
+Tag v0.0.1 created and pushed to remote origin
+[Pipeline] sh
++ make build
+CGO_ENABLED=0 GO15VENDOREXPERIMENT=1 go build -ldflags '' -o bin/demo-tester2 main.go
+[Pipeline] sh
++ cat VERSION
++ export VERSION=0.0.1
++ skaffold build -f skaffold.yaml
+time="2018-12-19T14:44:12Z" level=warning msg="config version (skaffold/v1alpha2) out of date: upgrading to latest (skaffold/v1beta1)"
+Starting build...
+Building [changeme]...
+Sending build context to Docker daemon  525.8kBSending build context to Docker daemon  6.497MB
+Step 1/4 : FROM scratch
+ ---> 
+Step 2/4 : EXPOSE 8080
+ ---> Using cache
+ ---> d14cce0c8968
+Step 3/4 : ENTRYPOINT /demo-tester2
+ ---> Running in 01d73d577118
+ ---> b4acf797b44b
+Step 4/4 : COPY ./bin/ /
+ ---> 11106b165a62
+Successfully built 11106b165a62
+The push refers to a repository [10.31.255.176:5000/cb-kubecd/demo-tester2]
+282f80d91896: Preparing
+282f80d91896: Pushed
+0.0.1: digest: sha256:954e50ec50ca3ffb35f725e5da791eddc14dd2f8b9ff281785793b287687a41c size: 528
+Build complete in 1.315647759s
+Starting test...
+Test complete in 5.358µs
+changeme -> 10.31.255.176:5000/cb-kubecd/demo-tester2:0.0.1
+[Pipeline] sh
++ cat VERSION
++ jx step post build --image 10.31.255.176:5000/cb-kubecd/demo-tester2:0.0.1
+plugins.jenkins.io is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot list plugins.jenkins.io in the namespace "jx"
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] stage
+[Pipeline] { (Promote to Environments)
+[Pipeline] dir
+Running in /home/jenkins/go/src/github.com/cb-kubecd/demo-tester2/charts/demo-tester2
+[Pipeline] {
+[Pipeline] sh
++ cat ../../VERSION
++ jx step changelog --version v0.0.1
+plugins.jenkins.io is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot list plugins.jenkins.io in the namespace "jx"
+Using batch mode as inside a pipeline
+Generating change log from git ref c0ffc7beb70cef5a6c5c4164e9c09f4131337922 => d311b5e19e79a1517a7ccbb3f218a780ad916292
+Unable to find user: jenkins-x.googlegroups.com -- users.jenkins.io "jenkins-x.googlegroups.com" is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot get users.jenkins.io in the namespace "jx"
+Unable to find user: jenkins-x.googlegroups.com -- users.jenkins.io "jenkins-x.googlegroups.com" is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot get users.jenkins.io in the namespace "jx"
+Finding issues in commit messages using git format
+No release found for cb-kubecd/demo-tester2 and tag v0.0.1 so creating a new release
+Updated the release information at https://github.com/cb-kubecd/demo-tester2/releases/tag/v0.0.1
+generated: /home/jenkins/go/src/github.com/cb-kubecd/demo-tester2/charts/demo-tester2/templates/release.yaml
+Failed to create Release demo-tester2-0-0-1 in namespace jx: releases.jenkins.io is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot create releases.jenkins.io in the namespace "jx"
+Updating PipelineActivity cb-kubecd-demo-tester2-master-1 with version 0.0.1
+Updated PipelineActivities cb-kubecd-demo-tester2-master-1 with release notes URL: https://github.com/cb-kubecd/demo-tester2/releases/tag/v0.0.1
+[Pipeline] sh
++ jx step helm release
+plugins.jenkins.io is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot list plugins.jenkins.io in the namespace "jx"
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: jenkins-x http://chartmuseum.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
+No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file demo-tester2-0.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+[Pipeline] sh
++ cat ../../VERSION
++ jx promote -b --all-auto --timeout 1h --version 0.0.1
+plugins.jenkins.io is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot list plugins.jenkins.io in the namespace "jx"
+prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/jx/issues/2410
+Promoting app demo-tester2 version 0.0.1 to namespace jx-kubecon-staging
+Could not find Jenkins URL services "jenkins" not found in namespace jx
+Created Pull Request: https://github.com/cb-kubecd/environment-jx-kubecon-staging/pull/8
+
+Could not find Jenkins URL services "jenkins" not found in namespace jx
+Pull Request https://github.com/cb-kubecd/environment-jx-kubecon-staging/pull/8 is merged at sha 4ea445e45d1b8fd56c9c96ea4b162c6deb615b14
+Pull Request merged but we are not waiting for the update pipeline to complete!
+Could not find the service URL in namespace jx-kubecon-staging for names demo-tester2, jx-demo-tester2, jx-kubecon-staging-demo-tester2
+[Pipeline] }
+[Pipeline] // dir
+[Pipeline] }
+[Pipeline] // stage
+[Pipeline] }
+[Pipeline] // withEnv
+[Pipeline] }
+[Pipeline] // withCredentials
+[Pipeline] }
+[Pipeline] // node
+[Pipeline] End of Pipeline
+Finished: SUCCESS
