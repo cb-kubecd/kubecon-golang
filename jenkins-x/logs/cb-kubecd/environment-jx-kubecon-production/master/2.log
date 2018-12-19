@@ -1,0 +1,9 @@
+Step: build-step-credential-initializer:
+
+Step: build-step-git-source:
+
+Step: build-step-apply:
+
+customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot create customresourcedefinitions.apiextensions.k8s.io at the cluster scope
+Modified file /workspace/env/Chart.yaml to set the chart to version 2
+error: failed to access team settings: failed to create the jx client: namespaces "jx" is forbidden: User "system:serviceaccount:jx:helm" cannot get namespaces in the namespace "jx"
